@@ -12,11 +12,11 @@ class TarefaTest extends TestCase
         $tarefa = Tarefa::create([
             'titulo' => 'Tarefa de Teste',
             'descricao' => 'Criando uma tarefa de Teste',
-            'concluida ' => false
+            'concluida' => false
     
         ]);
         $this->assertEquals('Tarefa de Teste', $tarefa->titulo);
         $this->assertEquals('Criando uma tarefa de Teste', $tarefa->descricao);
-            $this->assertFalse($tarefa->concluida);
+        $this->assertFalse($tarefa->concluida);
     }
 }
